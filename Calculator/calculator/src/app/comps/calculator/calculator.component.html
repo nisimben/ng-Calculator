@@ -1,0 +1,10 @@
+<header>
+  <h1>My Calculator</h1>
+  <input #myInput [value]='inputNumber' (keyup)='onkey(myInput.value)'  class="result" type="text">
+  <button (click)='onOperatorClick("+")' id="plus">+</button>
+  <button (click)='onOperatorClick("-")' id="minus">-</button>
+  <button (click)='onOperatorClick("*")' id="multy">*</button>
+  <button (click)='onOperatorClick("/")' id="devide">/</button>
+  <button (click)='onEqual(myInput.value)' id="eqaul">=</button>
+  <p>{{result}}</p>
+</header>
